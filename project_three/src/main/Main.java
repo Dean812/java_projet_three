@@ -1,6 +1,7 @@
 package main;
 
 import classes.Adresse;
+import classes.Chercheur;
 
 public class Main {
 
@@ -24,6 +25,14 @@ public class Main {
 		Adresse C2 = new Adresse ("Rue Général leclercq", "Sainghin", 59184);
 		C2.setVille("Christchurch");
 		System.out.println(C2);
+		
+//		9-10- Créer un Chercheur dans la classe Main en utilisant le même type de constructeur dans la classe Adresse C1.
+//		11- Affecter des valeurs à ce chercheur.
+//		12- Afficher toutes les informations relatives à ce chercheur.
+		Chercheur researcher = new Chercheur("David","Biologiste",22);
+		System.out.println(researcher);
+		
+		
 		
 	}
 
