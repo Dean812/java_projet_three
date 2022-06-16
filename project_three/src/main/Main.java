@@ -32,6 +32,11 @@ public class Main {
 		Chercheur researcher = new Chercheur("David","Biologiste",22);
 		System.out.println(researcher);
 		
+//		14 - afficher le nouveau constructeur 
+		Chercheur researcher2 = new Chercheur("Vincent",34);
+		
+//		15- Afficher le nombre de chercheurs créés.
+		System.out.println(researcher2.getNbrChercheur());
 		
 		
 	}
