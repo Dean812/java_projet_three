@@ -6,6 +6,7 @@ import java.util.List;
 import classes.Adresse;
 import classes.Bureau;
 import classes.Chercheur;
+import classes.Laboratoire;
 
 public class Main {
 
@@ -82,8 +83,20 @@ public class Main {
 		listeChercheur2.add(researcher);
 		
 		Bureau bureau1 = new Bureau(123, "LabDesk",listeChercheur); // #20.1
-		Bureau bureau2 = new Bureau(857, "starkDesk",listeChercheur); 
-		System.out.println(bureau1);
+		Bureau bureau2 = new Bureau(857, "starkDesk",listeChercheur2); 
+		System.out.println("Affichage de bureau 1 : " + bureau1); // test > ok 
+		System.out.println();
+		
+//		21- Créer un Laboratoire laboratoire1 qui contient une collection de deux bureaux.
+		
+		List<Bureau> listBureau = new ArrayList(); // collection de 2 bureau
+		listBureau.add(bureau1);
+		listBureau.add(bureau2);
+		
+		Laboratoire laboratoire1 = new Laboratoire("StarLab", "Nanotech", C2, listBureau);
+		
+//		22- Afficher les caractéristiques de l’objet laboratoire1.
+		System.out.println("Affichage de laboratoire 1 : " + laboratoire1);
 		
 	}
 
