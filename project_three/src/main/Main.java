@@ -12,7 +12,7 @@ public class Main {
 //		3- Afficher l’objet adresse crée. 
 		Adresse C1;   // # 1
 		C1 = new Adresse ("Jarvis Street"," Toronto",59000); // #2
-		System.out.println(C1);
+		System.out.println(C1); //# 3
 
 //		4- Modifier le code postal de cette adresse.
 //		5- Afficher l’objet adresse modifié.
@@ -29,14 +29,23 @@ public class Main {
 //		9-10- Créer un Chercheur dans la classe Main en utilisant le même type de constructeur dans la classe Adresse C1.
 //		11- Affecter des valeurs à ce chercheur.
 //		12- Afficher toutes les informations relatives à ce chercheur.
-		Chercheur researcher = new Chercheur("David","Biologiste",22);
-		System.out.println(researcher);
+		Chercheur researcher = new Chercheur("David","Biologiste",22); // # 10-11
+		System.out.println(researcher);// # 12
 		
+//		13- voir class Chercheur
 //		14 - afficher le nouveau constructeur 
 		Chercheur researcher2 = new Chercheur("Vincent",34);
 		
 //		15- Afficher le nombre de chercheurs créés.
 		System.out.println(researcher2.getNbrChercheur());
+		
+//		16- Ajouter dans la classe Chercheur la méthode comparer()
+		boolean result = researcher.comparer( researcher2);
+		if(result == true) {
+			System.out.println("Les 2 sont chercheurs identiques");
+		}else {
+			System.out.println("Les 2 sont chercheurs ne sont pas identiques");
+		}
 		
 		
 	}

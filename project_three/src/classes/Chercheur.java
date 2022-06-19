@@ -1,17 +1,18 @@
 package classes;
 
 public class Chercheur {
-
-	private int id;   //#15
+	
 	private String nom;
 	private String poste;
+	private int id; // #15
 	private int numPc;
-	private static int nbrChercheur; //#15
+	private int count;
+	private static int nbrChercheur; // #15
 
-	// 13 - 2eme constructeur parametré 
+	// 13 - 2eme constructeur parametré
 	public Chercheur(String nom, int numPc) {
 		super();
-		this.id = nbrChercheur++; //#15
+		this.id = nbrChercheur++; // #15
 		this.nom = nom;
 		this.poste = poste;
 		this.numPc = numPc;
@@ -19,7 +20,7 @@ public class Chercheur {
 
 	public Chercheur(String nom, String poste, int numPc) {
 		super();
-		this.id = nbrChercheur++; //#15 + maj accesseur + toString
+		this.id = nbrChercheur++; // #15 + maj accesseur + toString
 		this.nom = nom;
 		this.poste = poste;
 		this.numPc = numPc;
@@ -46,9 +47,10 @@ public class Chercheur {
 		return nbrChercheur;
 	}
 
-	public static void setNbrChercheur(int nbrChercheur) {
-		Chercheur.nbrChercheur = nbrChercheur;
-	}
+//  Pas besoin de setter, tout ce fait dans le constructeur et on affiche avec get
+//	public static void setNbrChercheur(int nbrChercheur) {  // # 15
+//		Chercheur.nbrChercheur = nbrChercheur;
+//	}
 
 	public String getPoste() {
 		return poste;
@@ -72,4 +74,12 @@ public class Chercheur {
 		return "Chercheur [id=" + id + ", nom=" + nom + ", poste=" + poste + ", numPc=" + numPc + "]";
 	}
 
+	public boolean comparer(Chercheur x) {   // # 16 
+		if(this.count == x.count && this.nom == x.nom && this.poste == x.poste && this.numPc == x.numPc) {
+			return true;
+		}
+		return false;
+	}
+
+	
 }
