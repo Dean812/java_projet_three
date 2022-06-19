@@ -1,5 +1,6 @@
 package main;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import classes.Adresse;
@@ -61,8 +62,29 @@ public class Main {
 //		researcher3 = new Chercheur("Jordan","Laborantin", 36); << pas cette version
 		researcher3.afficher("Jordan", "Laborantin", 36);
 		System.out.println(researcher3.getNbrChercheur());
-		System.out.println(researcher3);
+		System.out.println(researcher3);System.out.println();
 
+//		20- Créer deux Bureaux bureau1 et bureau2,     #20.1
+//		chaque bureau contient une collection de 3 chercheurs  #20.2
+		
+		List<Chercheur> listeChercheur = new ArrayList();  // 20.2
+		listeChercheur.add(researcher);
+		listeChercheur.add(researcher2);
+		listeChercheur.add(researcher3);
+		
+//		for (Chercheur dl : listeChercheur) {
+//			System.out.println(dl);
+//		}      -- test boucle pour lire l'array
+		
+		List<Chercheur> listeChercheur2 = new ArrayList();  // meme chercheur différent ordre
+		listeChercheur2.add(researcher2);
+		listeChercheur2.add(researcher3);
+		listeChercheur2.add(researcher);
+		
+		Bureau bureau1 = new Bureau(123, "LabDesk",listeChercheur); // #20.1
+		Bureau bureau2 = new Bureau(857, "starkDesk",listeChercheur); 
+		System.out.println(bureau1);
+		
 	}
 
 }

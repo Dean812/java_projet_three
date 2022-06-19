@@ -92,6 +92,6 @@ public class Chercheur {
 		this.nom = nom;
 		this.poste = poste;
 		this.numPc = numPc;
-	}
+	} // pas besoin dans mon cas de nbre ++, il est deja dans le constructeur vide
 	
 }
