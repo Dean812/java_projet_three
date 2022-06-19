@@ -87,6 +87,11 @@ public class Chercheur {
 		}
 		return false;
 	}
-
+	
+	public void afficher(String nom, String poste, int numPc) {
+		this.nom = nom;
+		this.poste = poste;
+		this.numPc = numPc;
+	}
 	
 }
