@@ -47,7 +47,19 @@ public class Main {
 			System.out.println("Les 2 sont chercheurs ne sont pas identiques");
 		}
 		
+//		17- Modifier le numéro de l’ordinateur de l’objet chercheur1
+		researcher.setNumPc(77);
+		System.out.println(researcher);
 		
+//		18- Créer un objet chercheur3 sans paramètres
+		Chercheur researcher3;
+		
+//		19- Ajouter un nom, un poste et un numéro de l’ordinateur à l’objet chercheur3
+		researcher3 = new Chercheur("Jordan","Laborantin", 36);
+		System.out.println(researcher3.getNbrChercheur());
+		System.out.println(researcher3);
+		
+
 	}
 
 }

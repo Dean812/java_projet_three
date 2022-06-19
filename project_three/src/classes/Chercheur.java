@@ -9,6 +9,13 @@ public class Chercheur {
 	private int count;
 	private static int nbrChercheur; // #15
 
+	
+	
+	public Chercheur() {
+		super();
+		this.id = nbrChercheur++; // #18
+	}
+
 	// 13 - 2eme constructeur parametré
 	public Chercheur(String nom, int numPc) {
 		super();
